@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course feedback page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body onload="showDate();">
+    <h2>Hello,thank you for your valuable feedback!</h2>
+    <p>Tell us about <span>your</span>courses</p>
+    <div id="courseIntro">
+        <div>Here are our courses:</div>
+        <div id="dateToday">Today:</div>
+
+    </div>
+    <form>
+        <div>
+            <label>Choose a course:</label>
+        </div>
+        <div>
+            <select id="courses" multiple size="3", onchange="choiceMade(this.value)">
+                <option value="" selected>--choose--</option>
+                <option value="angular" selected>Angular</option>
+                <option value="react" selected>React</option>
+                <option value="vue" selected>Vue</option>
+                <option value="javascript" selected>JavaScript</option>
+                <option value="python" selected>Python</option>
+            </select>
+        </div>
+        <div id="favorites">
+            <div>
+                <label class="standoutLabel">Favorite Instructor:</label>
+                <input type="text" id="instructorNamee"><!--required minlengh='4'>-->
+            </div>
+            <div>
+                <label class="standoutLabel">Favorite Course:</label>
+                <input type="text" id="courseName" pattern="[A-Za-z]{1}">
+            </div>
+            <div id="likes">
+                <p>Did you like the course?</p>
+                <input type="radio" name="like">Yes
+                <input type="radio" name="like">No
+            </div>
+
+        </div>
+        <div id="mathfunction">
+            <div>
+                <div>A few match functions like pow(),min(),and abs()</div>
+                <div id="result"></div>
+            </div>
+        </div>
+        <div>
+            <button class="green_btn" oneclick = "calculateThis();">Send</button>
+        </div>
+
+ 
+    </form>
+    
+</body>
+</html>

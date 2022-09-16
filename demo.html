@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>course selection page</title>
+</head>
+<body onload="alert('Hello')">
+    <nav>
+        <ul>
+            <li style="display:inline-block;">
+                <a href="home.html">home</a>
+            </li>
+            <li style="display:inline-blcok;">
+                <a href="services.html">services</a>
+            </li>
+            <li style="display:inline-block;">
+                <a href="contactus.html">contact us</a>    
+            </li>
+        </ul>
+    </nav>
+    <h4>Course selections</h4>
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Instructor</th>
+            <th>Start Date</th>
+        </tr>
+        <tr>
+            <th>JavaScript</th>
+            <th>Axle Barr</th>
+            <th>January,7</th>
+        </tr>
+        <tr>
+            <th>Java</th>
+            <th>Mary Smith</th>
+            <th>January,16</th>
+        </tr>
+        <tr>
+            <th>c#</th>
+            <th>John Smith</th>
+            <th>February,16</th>
+        </tr>
+    </table>
+    <p> Course you are interested</p>
+    <form>
+        <div>
+            <select id="courses" multiple>
+                <option value="" selected>--choose--</option>
+                <option value="angular" selected>Angular</option>
+                <option value="react" selected>React</option>
+                <option value="vue" selected>Vue</option>
+                <option value="javascript" selected>JavaScript</option>
+                <option value="python" selected>Python</option>
+            </select>
+        </div>
+        <div>
+            <label>Enter your favorite Instructor:</label>
+        </div>
+        <div>
+            <input type = "text" id = "courseName">
+        </div>
+        <p>Did you like the course?</p>
+        <div>
+            <input type="button" name="like">Yes
+            <input type="button" name="like">No
+        </div>
+        <div>
+            <button>Send</button>
+        </div>
+    </form>
+    
+</body>
+</html>
